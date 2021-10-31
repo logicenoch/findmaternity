@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching now...</h3>
+    </div>
+
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="index.html">Maternity.find</a>
+        </header>
+
+        <h1><span>The Healthy</span> Eating Experience</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          soluta harum minima. Tempore minima autem rerum. Magni iure cupiditate
+          reprehenderit!
+        </p>
+
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter your city:</label>
+              <input type="text" name="city" id="city" />
+              <p>Example: "Awka"</p>
+            </div>
+
+            <input type="button" value="Find Maternity Now" id="cta-btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Authentic. Awsome</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quidem
+          autem inventore molestias id eius odio. Iure odio libero deserunt.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa in
+          beatae nisi voluptates, sit adipisci officia exercitationem eligendi.
+          Nam a eum laudantium totam eos architecto illum explicabo deleniti
+          ipsa fugit.
+        </p>
+      </div>
+
+      <img src="81afdca9f318710be942d2db7dd8b280.jpg" alt="Baby" />
+    </section>
+
+    <script>
+      let btn = document.getElementById("cta-btn");
+      let overlay = document.getElementById("overlay");
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        overlay.classList.add("animate-overlay");
+      });
+    </script>
+  </body>
+</html>
